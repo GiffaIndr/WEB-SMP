@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanitasi</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+/*///////////////// Navbar ///////////////*/
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background:rgb(0, 0, 0) ;
+    position: fixed;
+}
+.logo img{
+    width: 7%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 5px;
+}
+nav{
+    float: right;
+    line-height: 100px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 1);
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 4px;
+    font-size: 15px;
+    color: whitesmoke;
+    padding: 16px 10px;
+    margin: 0 1px;
+    font-weight: 500;
+    transition: all 0.5 ease;
+}
+nav a:hover{
+    background: rgb(70, 144, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding-left: 5px;
+}
+/*////////////////// banner //////////////*/
+.banner-area{
+    background-image: url(smp.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.banner-area:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: darkblue;
+    opacity: .7;
+    z-index: -1;
+}
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+.content-area{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: rgb(161, 4, 98);
+    top: 550px;
+}
+.content-area h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+}
+/*///////// Search bar /////////////*/
+.search-form{
+    margin-top: 1px;
+    float: right;
+    margin-right: 100px;
+}
+input [type=text] {
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+button{
+    float: right;
+    background-color: rgb(102, 102, 102);
+    letter-spacing: 2px;
+    color: whitesmoke;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 2px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 24px;
+    border-block-width: 33px;
+    transition: all 0.3 ease;
+}
+button:hover{
+    background: #e5e5e5;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+}
+/*//////////////// foooter /////////////*/
+body{
+    line-height: 1.5;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    margin: auto;
+    max-width: 1170px;
+    padding: 0;
+
+}
+.footer{
+    background-color: rgb(54, 56, 122);
+    padding: 70px 0;
+    text-align: left;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(132, 0, 226);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(76, 0, 79);
+    text-decoration: none;
+    font-weight: 300;
+    color:rgb(241, 233, 253);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #000000;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(139, 139, 139);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #ffffff;
+    background-color: rgb(94, 0, 135);
+}
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+</style>
+<body>
+</div>
+<div class="box-area">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="*"> <img src="logo.jpeg"> </a>
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">home</a>
+                <form class="search-form">
+                    <input type="text" placeholder="search">
+                    <button>search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <div class="banner-area">
+            <h2> SMPN Cisarua 01</h2>
+        </div>
+    <div class="content-area">
+        <div class="wrapper">
+            <div class="content2">
+                <img src="sanitasi.jpg">
+                <div class="text2">
+                    <div class="text">
+            <h2> Sanitasi</h2>
+            <p></p>
+            </div>
+        </div>
+    </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>SMPN Cisarua 01</h4>
+                            <ul>
+                                <li><a href="">Tentang Sekolah</a></li>
+                                <li><a href="">Peraturan</a></li>
+                                <li><a href="">Seragam</a></li>
+                                <li><a href="">Eskul</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Sekolah</h4>
+                            <ul>
+                                <li><a href="">Murid</a></li>
+                                <li><a href="">Lab</a></li>
+                                <li><a href="">Guru</a></li>
+                                <li><a href="">Daftar</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Alamat</h4>
+                            <ul>
+                                <li><a href="https://www.google.co.id/maps/dir//-6.6641,106.9302/@-6.6640748,106.8601284,12z?expflags=enable_star_based_justifications:true">Jl. Jogjogan No. 92, Jogjogan, Kec. Cisarua, Kab. Bogor Prov. Jawa Barat</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Sosial Media</h4>
+                            <div class="social-links">
+                                <a href=""></a><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""></a><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""></a><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
